@@ -83,6 +83,7 @@
                     <div class="col-md-6">
                         <div class="form-group @if($errors->has('product_image')) has-error @endif">
                             <label>Image</label>
+                            <img src="{{url('/images').'/'.$product->product_image}}" alt="{{$product->product_image}}">
                             <input type="file" class="form-control" name="product_image">
                            
                             @if($errors->has('product_image'))

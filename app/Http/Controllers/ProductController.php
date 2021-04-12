@@ -52,7 +52,7 @@ class ProductController extends Controller
         {            
             $file = $request->file('product_image');            
             $name = time().'_'.$file->getClientOriginalName();
-            $request->product_image->move(base_path().'/public/products/', $name);
+            $request->product_image->move(base_path().'/images/', $name);
             $data['product_image'] = time().'_'.str_replace(' ', '_', $file->getClientOriginalName());
         } 
 

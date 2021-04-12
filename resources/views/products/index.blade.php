@@ -27,7 +27,7 @@
                             <td>{{ ($key+1) }}</td>
                             <td>{{$product->item_number}}</td>
                             <td>{{$product->description}}</td>
-                            <td><img src="{{url('/products').'/'.$product->product_image}}" alt="{{$product->product_image}}"></td>
+                            <td><img src="{{url('/images').'/'.$product->product_image}}" alt="{{$product->product_image}}"></td>
                             <td>{{$product->gender}}</td>
                             <td>{{$product->price}}</td>
                             <td>{{$product->description2}}</td>
